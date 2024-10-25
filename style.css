@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100svh;
+  font-family: "Agdasima", sans-serif;
+}
+
+#logo {
+  width: 100px;
+}
+.bg-img {
+  min-height: 100svh;
+  background-color: grey;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  display: grid;
+  place-items: center;
+  border: 8px solid black;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(0, 22, 5);
+  padding: 10px 20px;
+  position: fixed;
+  width: 100%;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  column-gap: 40px;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+a:hover {
+  color: rgb(133, 70, 70);
+}
+
+#first {
+  background-image: url(./images/lagbilde.jpg);
+}
+
+#second {
+  background-image: url(./images/markus-spiske-BfphcCvhl6E-unsplash.jpg);
+}
+
+#third {
+  background-image: url(./images/tom-pottiger-23ZL8GbiK0g-unsplash.jpg);
+}
+
+h2 {
+  font-size: 40px;
+  padding: 20px 40px;
+  background-color: hsla(240, 96%, 9%, 65%);
+  color: antiquewhite;
+  border-radius: 10px;
+  letter-spacing: 2px;
+}
+
+h3 {
+  font-size: 50px;
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+p {
+  font-size: 24px;
+  letter-spacing: 0.6px;
+  line-height: 1.2;
+  margin-top: 20px;
+}
+
+code {
+  color: crimson;
+  padding: 2px;
+  font-size: 105%;
+}
+
+article {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.information {
+  height: 100svh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(0, 22, 5);
+  color: aliceblue;
+}
+
+figure {
+  width: 300px;
+}
