@@ -1,5 +1,7 @@
+/* Reset CSS: Setter margin til 0 og border-box for at border inkluderes i boks */
 * {
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
@@ -53,15 +55,15 @@ a:hover {
 }
 
 #first {
-  background-image: url(./images/lagbilde.jpg);
+  background-image: url(./assets//lagbilde.jpg);
 }
 
 #second {
-  background-image: url(./images/markus-spiske-BfphcCvhl6E-unsplash.jpg);
+  background-image: url(./assets//markus-spiske-BfphcCvhl6E-unsplash.jpg);
 }
 
 #third {
-  background-image: url(./images/tom-pottiger-23ZL8GbiK0g-unsplash.jpg);
+  background-image: url(./assets//tom-pottiger-23ZL8GbiK0g-unsplash.jpg);
 }
 
 h2 {
@@ -107,7 +109,53 @@ article {
   background-color: rgb(0, 22, 5);
   color: aliceblue;
 }
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 4 columns on desktop */
+  gap: 30px;
+  padding: 40px;
+  background-color: black;
+}
 
-figure {
-  width: 300px;
+.player-card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: whitesmoke;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  padding: 10px;
+}
+
+.profile-photo {
+  width: 240px;
+  height: 240px;
+  border-radius: 10%;
+  margin-right: 10px;
+}
+
+.player-info {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 768px) {
+  .card-container {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns on tablets */
+  }
+}
+
+@media (max-width: 480px) {
+  .card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .player-card {
+    width: 90%;
+    max-width: 300px;
+    margin-bottom: 20px;
+  }
 }
