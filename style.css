@@ -112,7 +112,7 @@ article {
 .card-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* 4 columns on desktop */
-  gap: 30px;
+  gap: 40px;
   padding: 40px;
   background-color: black;
 }
@@ -123,7 +123,7 @@ article {
   align-items: center;
   background-color: whitesmoke;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 2px 3px 10px 1px hsl(0, 0%, 100%);
   text-align: left;
   padding: 10px;
 }
